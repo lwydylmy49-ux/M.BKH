@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<title>شركة البيئة الخضراء للأشغال والمقاولات | تجميع وتثمين الخردة</title>
+<meta name="description" content="شركة جزائرية متخصصة في تجميع وتثمين الخردة وإدارة النفايات الصناعية والمنزلية. دفع فوري، وزن دقيق، وأسعار تنافسية.">
+</head>
+<body>
+<div class="grain-overlay"></div>
+
+<!-- ===== Header ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap nav-row">
+    <button class="logo-btn" onclick="goTo('hero')">
+      <span class="logo-mark">
+        <span class="logo-mark-inner">
+          <img src="images/logo.png" alt="شعار البيئة الخضراء" style="width:100%;height:100%;object-fit:contain">
+        </span>
+        <span class="logo-glow"></span>
+      </span>
+      <span class="logo-text">
+        <span class="logo-title">البيئة الخضراء</span>
+        <span class="logo-sub">للأشغال والمقاولات</span>
+      </span>
+    </button>
+
+    <nav class="nav-links">
+      <a href="javascript:void(0)" onclick="goTo('about')">من نحن</a>
+      <a href="javascript:void(0)" onclick="goTo('waste')">إدارة النفايات</a>
+      <a href="javascript:void(0)" onclick="goTo('recycle')">الرسكلة</a>
+      <a href="javascript:void(0)" onclick="goTo('materials')">المواد</a>
+      <a href="javascript:void(0)" onclick="goTo('how')">كيف نعمل</a>
+      <a href="javascript:void(0)" onclick="goTo('why')">لماذا نحن</a>
+      <a href="javascript:void(0)" onclick="goTo('contact')">تواصل معنا</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn-seam cta-desktop" onclick="goTo('materials')">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        اطلب زيارة الآن
+      </button>
+      <button class="menu-toggle" onclick="toggleMobileMenu(true)" aria-label="فتح القائمة">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" onclick="toggleMobileMenu(false)" aria-label="إغلاق القائمة">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <a href="javascript:void(0)" onclick="goTo('about')">من نحن</a>
+  <a href="javascript:void(0)" onclick="goTo('waste')">إدارة النفايات</a>
+  <a href="javascript:void(0)" onclick="goTo('recycle')">الرسكلة</a>
+  <a href="javascript:void(0)" onclick="goTo('materials')">المواد</a>
+  <a href="javascript:void(0)" onclick="goTo('how')">كيف نعمل</a>
+  <a href="javascript:void(0)" onclick="goTo('why')">لماذا نحن</a>
+  <a href="javascript:void(0)" onclick="goTo('contact')">تواصل معنا</a>
+  <button class="btn-seam btn-block" style="margin-top:16px" onclick="goTo('materials')">اطلب زيارة الآن</button>
+</div>
+<div class="mobile-overlay" id="mobileOverlay" onclick="toggleMobileMenu(false)"></div>
+
+<main>
+<!-- ===== Hero ===== -->
+<section class="hero" id="hero">
+  <div class="bg-blob" style="background:#3FBF7F;width:420px;height:420px;top:-100px;right:-100px"></div>
+  <div class="bg-blob" style="background:#E8934F;width:380px;height:380px;bottom:-80px;left:-100px;opacity:.15"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <div class="section-tag"><span class="dot"></span>الشركة الجزائرية الرائدة في تثمين الخردة</div>
+      <h1 class="hero-title">
+        <span>نجمع</span>
+        <span class="text-seam" style="margin:4px 0">حديدك، نحاسك، نايلونك</span>
+        <span>وألمنيومك —</span>
+        <span class="text-seam-soft" style="margin-top:4px">ونحوّله لمالٍ في يدك</span>
+      </h1>
+      <p class="hero-lead">وزن دقيق على موازين معتمدة، تثمين عادل وفق أسعار السوق، ودفع فوري نقداً أو بتحويل بنكي. من منزلك، ورشتك، أو مصنعك — إلى حسابك في دقائق.</p>
+      <div class="hero-cta">
+        <button class="btn-seam" onclick="goTo('materials')">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16h6v6h-6z"/><path d="M2 16h6v6H2z"/><path d="M9 2h6v6H9z"/><path d="M5 9v3h14V9"/></svg>
+          بِع خردة الآن
+        </button>
+        <button class="btn-ghost" onclick="openModal()">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          تواصل معنا
+        </button>
+      </div>
+      <div class="trust-grid">
+        <div class="card trust-pill"><b class="text-seam-soft">+1200</b><span>عملية شهرياً</span></div>
+        <div class="card trust-pill"><b class="text-seam-soft">فوري</b><span>الدفع</span></div>
+        <div class="card trust-pill"><b class="text-seam-soft">مقر واحد</b><span>مجهّز بالكامل</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="card-stack" id="cardStack"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    <div class="about-media-col">
+      <div class="card gallery" id="gallery">
+        <img src="images/gallery1.jpg" alt="صورة 1" class="active">
+        <img src="images/gallery2.jpg" alt="صورة 2">
+        <img src="images/gallery3.jpg" alt="صورة 3">
+        <div class="glass gallery-caption" id="galleryCaption"><div>فريقنا المتخصص يفرز المواد بدقة</div></div>
+        <div class="gallery-dots" id="galleryDots"></div>
+        <button class="gallery-play" onclick="openVideoModal()" aria-label="تشغيل الفيديو التعريفي">
+          <span class="gallery-play-glow"></span>
+          <span class="gallery-play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="6,4 20,12 6,20"/></svg></span>
+        </button>
+      </div>
+      <div class="gallery-hint">جولة بصرية داخل مقرنا — اضغط لمشاهدة الفيديو التعريفي</div>
+    </div>
+
+    <div class="about-text-col">
+      <div class="section-tag" style="display:inline-flex"><span class="dot"></span>من نحن</div>
+      <h2 class="about-title">
+        <span>شريكك الموثوق في</span>
+        <span class="text-seam">تثمين الخردة وحماية البيئة</span>
+      </h2>
+      <div class="divider-seam" style="width:128px;margin-bottom:24px"></div>
+      <p class="about-p">منذ أكثر من <b>12 سنة</b>، تعمل شركة البيئة الخضراء للأشغال والمقاولات في قلب الجزائر، متخصصةً في تجميع وتثمين مختلف أنواع الخردة — من الحديد والنحاس إلى النايلون والألمنيوم والكرتون — إلى جانب تقديم حلول متكاملة لإدارة النفايات الصناعية والمنزلية.</p>
+      <p class="about-p" style="margin-bottom:32px">نؤمن بأن كل قطعة خردة تحمل قيمة، ومهمتنا أن نُخرج تلك القيمة إلى يدك بأعلى سعر وأسرع وقت، مع الحفاظ على بيئة نظيفة للأجيال القادمة.</p>
+
+      <div class="about-points">
+        <div class="card point-card"><span class="point-icon bg-seam-soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><div class="point-title">فريق متخصص</div><div class="point-desc">كوادر مدربة على الفرز والتقييم</div></div></div>
+        <div class="card point-card"><span class="point-icon bg-seam-soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><div class="point-title">معدات حديثة</div><div class="point-desc">موازين ومعدات مطابقة للمعايير</div></div></div>
+        <div class="card point-card"><span class="point-icon bg-seam-soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><div class="point-title">أسعار تنافسية</div><div class="point-desc">تثمين وفق أسعار السوق الفعلية</div></div></div>
+        <div class="card point-card"><span class="point-icon bg-seam-soft"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><div class="point-title">خدمة شاملة</div><div class="point-desc">جمع، نقل، تقييم، ودفع فوري</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Waste management ===== -->
+<section class="section waste-section" id="waste" style="background:var(--bg-card-2, #0a161b)">
+  <div class="bg-blob" style="background:#3FBF7F;width:360px;height:360px;top:20%;left:-100px;opacity:.1"></div>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag" style="display:inline-flex"><span class="dot"></span>إدارة النفايات</div>
+      <h2><span>حلول شاملة </span><span class="text-seam">لإدارة النفايات</span><span> الصناعية والمنزلية</span></h2>
+      <p>من الجمع حتى المعالجة — نوفر خدمات احترافية للمصانع، الورش، المؤسسات، والأسر.</p>
+    </div>
+
+    <div class="waste-grid">
+      <div>
+        <div class="card waste-image-card">
+          <img src="images/waste-management.jpg" alt="إدارة النفايات">
+          <div class="waste-image-badge"><div class="tag">خدمة احترافية</div><div class="title">حلول مخصصة لكل عميل</div></div>
+        </div>
+        <div class="card services-card">
+          <h3><span class="bar bg-seam"></span>خدماتنا</h3>
+          <ul class="services-list" id="wasteServicesList"></ul>
+        </div>
+        <button class="btn-ghost btn-block" style="margin-top:16px" onclick="openModal()">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          طرق التواصل المباشر (اتصال، واتساب، إيميل، خرائط)
+        </button>
+      </div>
+
+      <div class="card waste-form-card">
+        <h3>اطلب خدمة الآن</h3>
+        <p>املأ النموذج وسيصلك ردّنا على واتساب فوراً.</p>
+        <form id="wasteForm" onsubmit="submitWasteForm(event)">
+          <div class="field"><label>الاسم الكامل *</label><input class="form-input" id="wfName" type="text" placeholder="مثال: محمد بوزيد" required></div>
+          <div class="field"><label>رقم الهاتف *</label><input class="form-input" id="wfPhone" type="tel" placeholder="0555 000 000" dir="ltr" required></div>
+          <div class="field"><label>نوع الخدمة</label>
+            <select class="form-input" id="wfType"></select>
+          </div>
+          <div class="field"><label>المدينة / الولاية</label><input class="form-input" id="wfCity" type="text" placeholder="مثال: الجزائر العاصمة"></div>
+          <div class="field"><label>ملاحظات إضافية</label><textarea class="form-input" id="wfNotes" rows="3" placeholder="اكتب تفاصيل إضافية عن طلبك..."></textarea></div>
+          <button type="submit" class="btn-seam btn-block" id="wfSubmitBtn">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            <span id="wfSubmitText">إرسال عبر واتساب</span>
+          </button>
+          <p class="form-note">بالضغط على الإرسال، سيتم فتح واتساب مع رسالتك الجاهزة.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Recycle ===== -->
+<section class="section" id="recycle">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag" style="display:inline-flex"><span class="dot"></span>الرسكلة</div>
+      <h2><span class="text-seam" style="display:inline">من الخردة إلى الحياة من جديد</span></h2>
+      <p>نتبع دورة كاملة ومتكاملة لتحويل النفايات إلى موارد قيّمة.</p>
+    </div>
+
+    <div style="position:relative">
+      <div class="steps-line"></div>
+      <div class="steps-grid" id="recycleSteps"></div>
+    </div>
+
+    <div class="vision-grid">
+      <div class="card vision-card">
+        <div class="section-tag" style="display:inline-flex;margin-bottom:16px"><span class="dot"></span>رؤيتنا</div>
+        <h3>أن نكون الشركة <span class="text-seam-soft">الأولى في الجزائر</span> في تثمين الخردة</h3>
+        <p>نسعى لخلق منظومة مستدامة تحوّل كل قطعة خردة إلى قيمة اقتصادية حقيقية، مع المساهمة الفاعلة في حماية البيئة وبناء اقتصاد دائري في الجزائر.</p>
+      </div>
+      <div class="card vision-card">
+        <div class="section-tag" style="display:inline-flex;margin-bottom:16px"><span class="dot" style="background:#E8934F"></span>رسالتنا</div>
+        <h3>تقديم <span class="text-seam-soft">خدمات احترافية</span> بكل شفافية وأمانة</h3>
+        <p>نلتزم بأعلى معايير الجودة في جمع وفرز وتثمين الخردة، مع ضمان دفع فوري وعادل لكل عميل، وتوفير حلول بيئية متكاملة للمؤسسات والأسر.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Materials ===== -->
+<section class="section" id="materials" style="background:var(--bg-card-2, #0a161b)">
+  <div class="bg-blob" style="background:#E8934F;width:380px;height:380px;top:10%;right:-120px;opacity:.08"></div>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag" style="display:inline-flex"><span class="dot"></span>المواد التي نشتريها</div>
+      <h2><span>نشتري </span><span class="text-seam">5 أنواع</span><span> من الخردة بأسعار تنافسية</span></h2>
+      <p>هذه أسعارنا التقريبية للكيلوغرام الواحد، قابلة للتفاوض حسب الكمية والجودة وحالة السوق.</p>
+    </div>
+
+    <div class="materials-grid" id="materialsGrid"></div>
+
+    <div class="materials-footnote">
+      <p>* الأسعار تقريبية وقابلة للتغيير حسب السوق. السعر النهائي يُحدد بعد الوزن والفحص.</p>
+      <button class="btn-seam" onclick="goTo('materials')">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        احصل على السعر اللحظي
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== How we work ===== -->
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag" style="display:inline-flex"><span class="dot"></span>كيف نعمل</div>
+      <h2><span>4 خطوات </span><span class="text-seam">بسيطة</span><span> فقط</span></h2>
+      <p>من أول اتصال حتى استلام أموالك — عملية شفافة وسريعة.</p>
+    </div>
+    <div style="position:relative">
+      <div class="how-line"></div>
+      <div class="how-grid" id="howGrid"></div>
+    </div>
+    <div class="how-cta">
+      <button class="btn-seam" onclick="openModal()">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        ابدأ الخطوة الأولى
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Why us ===== -->
+<section class="section" id="why" style="background:var(--bg-card-2, #0a161b)">
+  <div class="bg-blob" style="background:#3FBF7F;width:460px;height:460px;bottom:-150px;right:-150px;opacity:.1"></div>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag" style="display:inline-flex"><span class="dot"></span>لماذا نحن</div>
+      <h2><span>6 أسباب </span><span class="text-seam">تجعلنا الخيار الأول</span></h2>
+      <p>التزامنا بالجودة والشفافية والدفع الفوري هو ما يميّزنا.</p>
+    </div>
+
+    <div class="reasons-grid" id="reasonsGrid"></div>
+
+    <div class="card stats-card">
+      <div class="stats-head">
+        <div class="section-tag" style="display:inline-flex;margin-bottom:10px"><span class="dot"></span>بالأرقام</div>
+        <h3>أرقام <span class="text-seam-soft">تتحدث عنا</span></h3>
+      </div>
+      <div class="stats-grid" id="statsGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="section" id="contact">
+  <div class="bg-blob" style="background:#3FBF7F;width:380px;height:380px;top:0;right:-100px;opacity:.1"></div>
+  <div class="bg-blob" style="background:#E8934F;width:380px;height:380px;bottom:0;left:-100px;opacity:.1"></div>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag" style="display:inline-flex"><span class="dot"></span>تواصل معنا</div>
+      <h2><span>نحن </span><span class="text-seam">بالخارج</span><span> بانتظارك</span></h2>
+      <p>أرسل لنا طلبك الآن عبر النموذج، أو اختر قناة التواصل التي تناسبك.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div>
+        <div class="channels" id="contactChannels"></div>
+        <button class="btn-ghost btn-block" style="margin-top:12px" onclick="openModal()">عرض كل طرق التواصل</button>
+      </div>
+
+      <div class="card contact-form-card">
+        <h3>أرسل طلبك الآن</h3>
+        <p>املأ النموذج وسيتم فتح واتساب مع رسالتك الجاهزة.</p>
+        <form id="contactForm" onsubmit="submitContactForm(event)">
+          <div class="field-row">
+            <div class="field"><label>الاسم الكامل *</label><input class="form-input" id="cfName" type="text" placeholder="اسمك الكامل" required></div>
+            <div class="field"><label>رقم الهاتف *</label><input class="form-input" id="cfPhone" type="tel" placeholder="0555 000 000" dir="ltr" required></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label>نوع المادة</label><select class="form-input" id="cfMaterial"></select></div>
+            <div class="field"><label>المدينة / الولاية</label><input class="form-input" id="cfCity" type="text" placeholder="مثال: وهران"></div>
+          </div>
+          <button type="submit" class="btn-seam btn-block" id="cfSubmitBtn">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            <span id="cfSubmitText">إرسال عبر واتساب</span>
+          </button>
+          <p class="form-note">بياناتك آمنة معنا ولا تُستخدم إلا للتواصل معك.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="card footer-cta">
+      <div class="bg-blob" style="background:var(--accent);width:75%;height:160px;top:-80px;left:12.5%;opacity:.14"></div>
+      <h3>عندك <span class="text-seam-soft">خردة؟</span> لا تتردد، تواصل معنا الآن</h3>
+      <p>فريقنا مستعد لاستقبال خردتك في أي وقت، بأعلى سعر وأسرع دفع.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <button class="btn-seam" onclick="openModal()">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          اتصل بنا الآن
+        </button>
+        <a class="btn-ghost" id="footerWhatsapp" href="javascript:void(0)" onclick="openChoiceModal('whatsapp')">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          راسلنا على واتساب
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="logo-mark-inner" style="width:44px;height:44px">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;color:#050f14"><path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0 1-.004-1.784L7.196 9.5"/><path d="M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12"/><path d="m14 16-3 3 3 3"/><path d="M8.293 13.596 7.196 9.5 3.1 10.598"/><path d="m9.344 5.811 1.093-1.892A1.83 1.83 0 0 1 11.985 3a1.784 1.784 0 0 1 1.546.888l3.943 6.843"/><path d="m13.378 9.633 4.096 1.098 1.097-4.096"/></svg>
+          </span>
+          <div><div class="footer-brand-title" id="footerCompanyName"></div><div class="footer-brand-sub">للأشغال والمقاولات</div></div>
+        </div>
+        <p class="footer-desc" id="footerTagline"></p>
+      </div>
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <ul id="footerLinks"></ul>
+      </div>
+      <div class="footer-col">
+        <h4>تواصل</h4>
+        <ul>
+          <li><a id="footerPhone" dir="ltr" href="javascript:void(0)" onclick="openChoiceModal('call')"></a></li>
+          <li><a id="footerEmail"></a></li>
+          <li class="footer-address" id="footerAddress"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="divider-seam"></div>
+    <div class="footer-bottom">
+      <div id="footerCopyright"></div>
+      <div class="made">صُنع بكل
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        في الجزائر
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Contact modal ===== -->
+<div class="modal-backdrop" id="contactModal" onclick="if(event.target===this) closeModal()">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal()" aria-label="إغلاق">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="section-tag"><span class="dot"></span>طرق التواصل</div>
+    <h3>نحن في خدمتك</h3>
+    <p>اختر طريقة التواصل التي تناسبك — فريقنا يرد بسرعة.</p>
+    <div class="modal-list" id="modalList"></div>
+  </div>
+</div>
+
+<!-- ===== Video modal ===== -->
+<div class="modal-backdrop" id="videoModal" onclick="if(event.target===this) closeVideoModal()">
+  <div class="modal-content" style="max-width:800px;padding:16px">
+    <button class="modal-close" onclick="closeVideoModal()" aria-label="إغلاق">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <video id="aboutVideo" controls style="width:100%;border-radius:12px;display:block;margin-top:24px">
+      <source src="videos/about-video.mp4" type="video/mp4">
+      متصفحك لا يدعم تشغيل الفيديو.
+    </video>
+  </div>
+</div>
+
+<!-- ===== Choice modal (phone / whatsapp) ===== -->
+<div class="modal-backdrop" id="choiceModal" onclick="if(event.target===this) closeChoiceModal()">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeChoiceModal()" aria-label="إغلاق">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="section-tag"><span class="dot"></span>اختر رقماً</div>
+    <h3 id="choiceModalTitle">اختر الرقم المناسب</h3>
+    <p>لدينا رقمان متاحان، اختر ما يناسبك.</p>
+    <div class="modal-list" id="choiceModalList"></div>
+  </div>
+</div>
+
+<script>
+/* =========================================================
+   بيانات الموقع
+   ========================================================= */
+var COMPANY = {
+  name: 'شركة البيئة الخضراء',
+  fullName: 'شركة البيئة الخضراء للأشغال والمقاولات',
+  tagline: 'نحوّل الخردة إلى قيمة حقيقية',
+  phone1: '0673191671',
+  phone2: '0665953658',
+  whatsappNumbers: ['0673191671', '0665953658'],
+  whatsapp: '213673191671',
+  email: 'dilmioday1975@gmail.com',
+  address: 'المنطقة الصناعية، الجزائر العاصمة، الجزائر',
+  mapsUrl: 'https://maps.app.goo.gl/VTUzyW23HUUaWuLK8?g_st=aw',
+  lat: 36.7538,
+  lng: 3.0588
+};
+
+var MATERIALS = [
+  { id:'iron', name:'الحديد', description:'حديد البناء، الصفائح، المواسير، والمخلفات المعدنية. نقوم بوزنها بدقة وشرائها بأفضل سعر.', price:140, unit:'دج/كغ', color:'#8a8a8a', emoji:'🔩', image:'images/iron.jpg' },
+  { id:'copper', name:'النحاس', description:'أسلاك، مواسير، وقطع نحاس نقية. النحاس من أثمن المعادن وأكثرها طلباً في السوق.', price:1450, unit:'دج/كغ', color:'#E8934F', emoji:'🔌', image:'images/copper.jpg' },
+  { id:'nylon', name:'النايلون', description:'أكياس، خراطيم، وقطع نايلون صناعية ومنزلية. مادة قابلة لإعادة التدوير بكفاءة عالية.', price:80, unit:'دج/كغ', color:'#3FBF7F', emoji:'🛍️', image:'images/nylon.jpg' },
+  { id:'aluminum', name:'الألمنيوم', description:'علب، صفائح، إطارات نوافذ، وقطع ألمنيوم. خفيف الوزن، صديق للبيئة، وقابل لتثمين ممتاز.', price:520, unit:'دج/كغ', color:'#bcc6cc', emoji:'🥫', image:'images/aluminum.jpg' },
+  { id:'cardboard', name:'الكرتون', description:'كرتون مفلطح، صناديق، ومخلفات ورقية. يُعاد تصنيعه إلى مواد تغليف جديدة وكرتون بيئي.', price:35, unit:'دج/كغ', color:'#C0713C', emoji:'📦', image:'images/cardboard.jpg' }
+];
+
+var NAV_LINKS = [
+  {id:'about', label:'من نحن'}, {id:'waste', label:'إدارة النفايات'}, {id:'recycle', label:'الرسكلة'},
+  {id:'materials', label:'المواد'}, {id:'how', label:'كيف نعمل'}, {id:'why', label:'لماذا نحن'}, {id:'contact', label:'تواصل معنا'}
+];
+
+var STATS = [
+  {value:'+12', label:'سنة من الخبرة', sub:'في خدمة الجزائر'},
+  {value:'50K+', label:'طن خردة سنوياً', sub:'نقوم بمعالجتها'},
+  {value:'24/7', label:'ساعة استجابة', sub:'متاحون دائماً'},
+  {value:'30K+', label:'عميل راضٍ', sub:'يثقون بنا'}
+];
+
+var RECYCLE_STEPS = [
+  {id:1, title:'الجمع', desc:'نجمع الخردة من المنازل، الورش، والمصانع بسياراتنا المجهزة في كل ولايات الوطن.', icon:'truck'},
+  {id:2, title:'الفرز', desc:'يفرز فريقنا المتخصص المواد حسب النوع (حديد، نحاس، ألمنيوم، نايلون، كرتون) لتنقية كاملة.', icon:'sort'},
+  {id:3, title:'التثمين', desc:'نقوم بوزن دقيق وتثمين عادل لكل كيلوغرام وفق أسعار السوق المحلية والعالمية.', icon:'scale'},
+  {id:4, title:'الرسكلة', desc:'نحوّل الخردة إلى مواد خام جديدة تدخل في صناعات البناء والتغليف والصناعات التحويلية.', icon:'recycle'}
+];
+
+var PROCESS_STEPS = [
+  {id:1, title:'اتصل بنا', desc:'تواصل معنا عبر الهاتف، واتساب، أو النموذج وحدد نوع الخردة والكمية التقريبية.'},
+  {id:2, title:'احضر للمقر', desc:'زُر مقرنا في المنطقة الصناعية بالجزائر العاصمة، أو نرسل فريقنا إليك للكميات الكبيرة.'},
+  {id:3, title:'وزن وتقييم', desc:'نزن المواد على موازين معتمدة، نقيّمها بأسعار السوق، ونعرض عليك السعر النهائي شفافاً.'},
+  {id:4, title:'دفع فوري', desc:'نلتزم بالدفع الفوري نقداً أو بتحويل بنكي في اللحظة — لا انتظار، لا تأخير، لا وعود.'}
+];
+
+var WASTE_SERVICES = [
+  'جمع ونقل النفايات الصناعية', 'جمع ونقل النفايات المنزلية', 'تثمين الخردة المعدنية',
+  'تثمين النفايات البلاستيكية والنايلون', 'إعادة تدوير الورق والكرتون', 'تأجير شاحنات النفايات للمصانع',
+  'استشارات بيئية وحلول مخصصة'
+];
+
+var REASONS = [
+  { title:'دفع فوري', desc:'لا انتظار، لا وعود. نقداً أو تحويل بنكي في اللحظة.', icon:'<line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>' },
+  { title:'وزن دقيق', desc:'موازين معتمدة رسمياً ومعايرة وفق المعايير الجزائرية.', icon:'<path d="M12 3v18"/><rect x="4" y="7" width="16" height="10" rx="2"/><circle cx="12" cy="12" r="2"/>' },
+  { title:'أسعار تنافسية', desc:'نقدّم أعلى أسعار السوق وفق الأسعار العالمية الفعلية.', icon:'<polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>' },
+  { title:'موثوقية', desc:'أكثر من 12 سنة في السوق الجزائري وعشرات آلاف العملاء.', icon:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/>' },
+  { title:'جمع من الموقع', desc:'للكميات الكبيرة نرسل فريقنا وسياراتنا إليك أينما كنت.', icon:'<path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>' },
+  { title:'حماية بيئية', desc:'نلتزم بمعايير بيئية صارمة في الفرز والمعالجة والتثمين.', icon:'<path d="M2 22c1-6 5-10 10-10s9 4 10 10"/><path d="M12 12V2"/><path d="M12 2l4 4"/><path d="M12 2l-4 4"/>' }
+];
+
+var STEP_ICONS = {
+  truck: '<path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>',
+  sort: '<path d="M3 6h18"/><path d="M7 12h10"/><path d="M10 18h4"/><path d="M14 4l4 4-4 4"/><path d="M10 20l-4-4 4-4"/>',
+  scale: '<rect x="2" y="6" width="20" height="14" rx="2"/><path d="M2 10h20"/><circle cx="12" cy="15" r="2"/><path d="M6 6V3"/><path d="M18 6V3"/>',
+  recycle: '<path d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.83 1.83 0 0 1-.004-1.784L7.196 9.5"/><path d="M11 19h8.203a1.83 1.83 0 0 0 1.556-.89 1.78 1.78 0 0 0 0-1.775l-1.226-2.12"/><path d="m14 16-3 3 3 3"/><path d="M8.293 13.596 7.196 9.5 3.1 10.598"/><path d="m9.344 5.811 1.093-1.892A1.83 1.83 0 0 1 11.985 3a1.78 1.78 0 0 1 1.546.888l3.943 6.843"/><path d="m13.378 9.633 4.096 1.098 1.097-4.096"/>'
+};
+
+var ICONS = {
+  phone: '<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>',
+  whatsapp: '<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>',
+  mail: '<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>',
+  map: '<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>'
+};
+
+function svgIcon(paths, strokeFill){
+  strokeFill = strokeFill || 'stroke';
+  var attrs = strokeFill === 'fill' ? 'fill="currentColor"' : 'fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"';
+  return '<svg viewBox="0 0 24 24" ' + attrs + '>' + paths + '</svg>';
+}
+
+/* =========================================================
+   أدوات عامة
+   ========================================================= */
+function goTo(id){
+  toggleMobileMenu(false);
+  var el = document.getElementById(id);
+  if(el) el.scrollIntoView({behavior:'smooth'});
+}
+
+function toggleMobileMenu(open){
+  document.getElementById('mobileMenu').classList.toggle('open', open);
+  document.getElementById('mobileOverlay').classList.toggle('open', open);
+}
+
+function openModal(){ document.getElementById('contactModal').classList.add('open'); }
+function closeModal(){ document.getElementById('contactModal').classList.remove('open'); }
+
+function openVideoModal(){
+  document.getElementById('videoModal').classList.add('open');
+  document.getElementById('aboutVideo').play();
+}
+function closeVideoModal(){
+  document.getElementById('videoModal').classList.remove('open');
+  var v = document.getElementById('aboutVideo');
+  v.pause();
+  v.currentTime = 0;
+}
+
+function openChoiceModal(type){
+  var title = type === 'call' ? 'اختر رقم الاتصال' : 'اختر رقم واتساب';
+  document.getElementById('choiceModalTitle').textContent = title;
+
+  var items = [
+    { label: 'الرقم الأول', value: COMPANY.phone1 },
+    { label: 'الرقم الثاني', value: COMPANY.phone2 }
+  ];
+
+  var html = '';
+  items.forEach(function(it){
+    var href = type === 'call'
+      ? 'tel:' + it.value
+      : 'https://wa.me/213' + it.value.replace(/^0/, '');
+    var icon = type === 'call' ? ICONS.phone : ICONS.whatsapp;
+    var target = type === 'call' ? '' : ' target="_blank" rel="noopener noreferrer"';
+    html += '<a class="modal-item card" href="' + href + '"' + target + '>' +
+      '<span class="channel-icon" style="background:#3FBF7F1F;border:1px solid #3FBF7F40;color:#3FBF7F">' + svgIcon(icon, type==='call'?'stroke':'fill') + '</span>' +
+      '<div><div class="point-title">' + it.label + '</div><div class="point-desc" dir="ltr">' + it.value + '</div></div>' +
+      '<svg class="modal-item-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>' +
+      '</a>';
+  });
+  document.getElementById('choiceModalList').innerHTML = html;
+  document.getElementById('choiceModal').classList.add('open');
+}
+function closeChoiceModal(){ document.getElementById('choiceModal').classList.remove('open'); }
+
+/* header scroll state */
+window.addEventListener('scroll', function(){
+  document.getElementById('siteHeader').classList.toggle('scrolled', window.scrollY > 30);
+});
+
+/* =========================================================
+   بناء المحتوى الديناميكي
+   ========================================================= */
+function buildFooter(){
+  document.getElementById('footerCompanyName').textContent = COMPANY.name;
+  document.getElementById('footerTagline').textContent = COMPANY.tagline + '. متخصصون في تجميع وتثمين الخردة، وإدارة النفايات الصناعية والمنزلية في الجزائر منذ أكثر من 12 سنة.';
+  document.getElementById('footerPhone').textContent = COMPANY.phone1 + ' / ' + COMPANY.phone2;
+  document.getElementById('footerEmail').textContent = COMPANY.email;
+  document.getElementById('footerEmail').href = 'mailto:' + COMPANY.email;
+  document.getElementById('footerAddress').textContent = COMPANY.address;
+  document.getElementById('footerCopyright').textContent = '© ' + new Date().getFullYear() + ' ' + COMPANY.fullName + '. جميع الحقوق محفوظة. — تصميم وتطوير عدي عبيد الله';
+
+  var linksHtml = '';
+  NAV_LINKS.forEach(function(l){
+    linksHtml += '<li><a href="javascript:void(0)" onclick="goTo(\'' + l.id + '\')">' + l.label + '</a></li>';
+  });
+  document.getElementById('footerLinks').innerHTML = linksHtml;
+}
+
+function buildWasteServices(){
+  var html = '';
+  WASTE_SERVICES.forEach(function(s){
+    html += '<li>' + svgIcon('<polyline points="20 6 9 17 4 12"/>') + '<span>' + s + '</span></li>';
+  });
+  document.getElementById('wasteServicesList').innerHTML = html;
+
+  var opts = '';
+  WASTE_SERVICES.forEach(function(s){ opts += '<option>' + s + '</option>'; });
+  document.getElementById('wfType').innerHTML = opts;
+}
+
+function buildRecycleSteps(){
+  var html = '';
+  RECYCLE_STEPS.forEach(function(step, i){
+    html += '<div class="card step-card">' +
+      '<div class="step-number">' + String(i+1).padStart(2,'0') + '</div>' +
+      '<div class="step-icon bg-seam-soft">' + svgIcon(STEP_ICONS[step.icon]) + '</div>' +
+      '<h3>' + step.title + '</h3><p>' + step.desc + '</p>' +
+      '<div class="step-underline"></div></div>';
+  });
+  document.getElementById('recycleSteps').innerHTML = html;
+}
+
+function buildMaterials(){
+  var html = '';
+  MATERIALS.forEach(function(m){
+    html += '<div class="card material-card">' +
+      '<div class="material-glow" style="background:' + m.color + '"></div>' +
+      '<div class="material-head">' +
+        '<div class="material-avatar-wrap">' +
+          '<div class="material-avatar" style="border-color:' + m.color + '80"><img src="' + m.image + '" alt="' + m.name + '"></div>' +
+          '<div class="material-emoji-badge" style="background:' + m.color + '">' + m.emoji + '</div>' +
+        '</div>' +
+        '<div class="material-info"><h3>' + m.name + '</h3>' +
+          '<div class="material-price-pill"><span class="lbl">السعر التقريبي</span><span class="val text-seam-soft">' + m.price + '</span><span class="unit">' + m.unit + '</span></div>' +
+        '</div>' +
+      '</div>' +
+      '<p class="material-desc">' + m.description + '</p>' +
+      '<div class="material-foot">' +
+        '<span class="material-status"><span class="dot pulse-dot"></span>متاح للشراء الآن</span>' +
+        '<button class="material-sell-link" onclick="goTo(\'materials\')">بيع الآن' + svgIcon('<polyline points="9 18 15 12 9 6"/>') + '</button>' +
+      '</div></div>';
+  });
+  document.getElementById('materialsGrid').innerHTML = html;
+
+  var opts = '';
+  MATERIALS.forEach(function(m){ opts += '<option value="' + m.id + '">' + m.name + '</option>'; });
+  document.getElementById('cfMaterial').innerHTML = opts;
+}
+
+function buildHowWeWork(){
+  var html = '';
+  PROCESS_STEPS.forEach(function(s, i){
+    html += '<div class="how-item">' +
+      '<div class="how-badge glass-strong text-seam-soft">' + String(i+1).padStart(2,'0') + '</div>' +
+      '<div class="card how-card"><h3>' + s.title + '</h3><p>' + s.desc + '</p></div>' +
+      '</div>';
+  });
+  document.getElementById('howGrid').innerHTML = html;
+}
+
+function buildWhyUs(){
+  var html = '';
+  REASONS.forEach(function(r, i){
+    html += '<div class="card reason-card">' +
+      '<div class="reason-icon bg-seam-soft">' + svgIcon(r.icon) + '</div>' +
+      '<div class="reason-body"><div class="reason-top"><h3>' + r.title + '</h3><span class="text-seam-soft">0' + (i+1) + '</span></div><p>' + r.desc + '</p></div>' +
+      '</div>';
+  });
+  document.getElementById('reasonsGrid').innerHTML = html;
+
+  var statsHtml = '';
+  STATS.forEach(function(s){
+    statsHtml += '<div class="stat-box"><div class="val text-seam-soft">' + s.value + '</div><div class="lbl">' + s.label + '</div><div class="sub">' + s.sub + '</div></div>';
+  });
+  document.getElementById('statsGrid').innerHTML = statsHtml;
+}
+
+function buildContactChannels(){
+  var channels = [
+    { label:'اتصل بنا', value:COMPANY.phone1 + ' / ' + COMPANY.phone2, sub:'متاحون من 8 صباحاً حتى 8 مساءً', href:'javascript:void(0)', onclick:"openChoiceModal('call')", icon:'phone', color:'#3FBF7F' },
+    { label:'واتساب', value:COMPANY.phone1 + ' / ' + COMPANY.phone2, sub:'رد سريع 24/7', href:'javascript:void(0)', onclick:"openChoiceModal('whatsapp')", icon:'whatsapp', color:'#25D366' },
+    { label:'البريد الإلكتروني', value:COMPANY.email, sub:'نرد خلال 24 ساعة', href:'mailto:' + COMPANY.email, icon:'mail', color:'#E8934F' },
+    { label:'موقعنا', value:COMPANY.address, sub:'مفتوح من السبت للخميس', href:COMPANY.mapsUrl, icon:'map', color:'#3FBF7F' }
+  ];
+  var html = '';
+  channels.forEach(function(c){
+    var target = c.href.indexOf('http') === 0 ? ' target="_blank" rel="noopener noreferrer"' : '';
+    var onclick = c.onclick ? ' onclick="' + c.onclick + '"' : '';
+    html += '<a class="card channel-card" href="' + c.href + '"' + target + onclick + '>' +
+      '<span class="channel-icon" style="background:' + c.color + '1F;border:1px solid ' + c.color + '40;color:' + c.color + '">' + svgIcon(ICONS[c.icon], c.icon==='whatsapp'?'fill':'stroke') + '</span>' +
+      '<span class="channel-body"><span class="channel-label">' + c.label + '</span><span class="channel-value" dir="ltr">' + c.value + '</span><span class="channel-sub">' + c.sub + '</span></span>' +
+      '</a>';
+  });
+  document.getElementById('contactChannels').innerHTML = html;
+}
+
+function buildModal(){
+  var items = [
+    { label:'اتصل بنا — الرقم الأول', value:COMPANY.phone1, href:'tel:' + COMPANY.phone1, icon:'phone', color:'#3FBF7F' },
+    { label:'اتصل بنا — الرقم الثاني', value:COMPANY.phone2, href:'tel:' + COMPANY.phone2, icon:'phone', color:'#E8934F' },
+    { label:'واتساب — الرقم الأول', value:COMPANY.phone1, href:'https://wa.me/213' + COMPANY.phone1.replace(/^0/, ''), icon:'whatsapp', color:'#25D366' },
+    { label:'واتساب — الرقم الثاني', value:COMPANY.phone2, href:'https://wa.me/213' + COMPANY.phone2.replace(/^0/, ''), icon:'whatsapp', color:'#25D366' },
+    { label:'البريد الإلكتروني', value:COMPANY.email, href:'mailto:' + COMPANY.email, icon:'mail', color:'#3FBF7F' },
+    { label:'موقعنا على الخريطة', value:COMPANY.address, href:COMPANY.mapsUrl, icon:'map', color:'#E8934F' }
+  ];
+  var html = '';
+  items.forEach(function(it){
+    var target = it.href.indexOf('http') === 0 ? ' target="_blank" rel="noopener noreferrer"' : '';
+    html += '<a class="card modal-item" href="' + it.href + '"' + target + '>' +
+      '<span class="channel-icon" style="background:' + it.color + '1F;border:1px solid ' + it.color + '40;color:' + it.color + '">' + svgIcon(ICONS[it.icon], it.icon==='whatsapp'?'fill':'stroke') + '</span>' +
+      '<span class="channel-body"><span class="channel-label">' + it.label + '</span><span class="channel-value" dir="ltr">' + it.value + '</span></span>' +
+      svgIcon('<polyline points="9 18 15 12 9 6"/>').replace('<svg ', '<svg class="modal-item-arrow" ') +
+      '</a>';
+  });
+  document.getElementById('modalList').innerHTML = html;
+}
+
+/* =========================================================
+   كومة بطاقات المواد في الـ Hero
+   ========================================================= */
+var stackOrder = MATERIALS.map(function(_, i){ return i; });
+
+function bringToFront(i){
+  var idx = stackOrder.indexOf(i);
+  stackOrder.splice(idx, 1);
+  stackOrder.unshift(i);
+  renderStack();
+}
+
+function renderStack(){
+  var container = document.getElementById('cardStack');
+  if(!container.dataset.built){
+    var html = '';
+    MATERIALS.forEach(function(m, i){
+      html += '<div class="stack-card" id="stackCard' + i + '" onclick="bringToFront(' + i + ')">' +
+        '<div class="stack-image-wrap"><img src="' + m.image + '" alt="' + m.name + '" loading="lazy">' +
+        '<span class="stack-avail"><span class="dot"></span>متاح</span>' +
+        '<span class="stack-emoji" style="background:linear-gradient(135deg,' + m.color + '30,' + m.color + '60);border:2px solid ' + m.color + '80">' + m.emoji + '</span>' +
+        '</div>' +
+        '<div class="stack-body"><div class="stack-title-row"><h3>' + m.name + '</h3>' +
+        '<div style="text-align:left;flex-shrink:0"><div class="stack-price-lbl">السعر التقريبي</div><div class="stack-price-val text-seam-soft">' + m.price + ' <small>' + m.unit + '</small></div></div></div>' +
+        '<p class="stack-desc">' + m.description + '</p></div></div>';
+    });
+    container.innerHTML = html;
+    container.dataset.built = '1';
+
+    var dotsHtml = '';
+    MATERIALS.forEach(function(_, i){
+      dotsHtml += '<button onclick="bringToFront(' + i + ')" aria-label="انتقل للمادة ' + (i+1) + '"></button>';
+    });
+    var dots = document.createElement('div');
+    dots.className = 'stack-dots';
+    dots.id = 'stackDots';
+    dots.innerHTML = dotsHtml;
+    container.appendChild(dots);
+  }
+
+  MATERIALS.forEach(function(m, i){
+    var stackIndex = stackOrder.indexOf(i);
+    var card = document.getElementById('stackCard' + i);
+    var tx = (stackIndex - 2) * 14;
+    var ty = stackIndex * 10;
+    var scale = 1 - stackIndex * 0.04;
+    var rot = (stackIndex - 2) * 2.5;
+    card.style.transform = 'translateX(' + tx + 'px) translateY(' + ty + 'px) scale(' + scale + ') rotate(' + rot + 'deg)';
+    card.style.zIndex = MATERIALS.length - stackIndex;
+    card.style.opacity = stackIndex > 3 ? '0' : '1';
+    card.style.pointerEvents = stackIndex > 3 ? 'none' : 'auto';
+    card.classList.toggle('top-active', stackIndex === 0);
+  });
+
+  var dotButtons = document.querySelectorAll('#stackDots button');
+  dotButtons.forEach(function(btn, i){
+    btn.classList.toggle('active', stackOrder[0] === i);
+  });
+}
+
+setInterval(function(){
+  var next = (stackOrder.indexOf( (stackOrder[0]+1) % MATERIALS.length ) >= 0) ? (stackOrder[0]+1) % MATERIALS.length : 0;
+  bringToFront(next);
+}, 4000);
+
+/* =========================================================
+   سلايدر "من نحن"
+   ========================================================= */
+var GALLERY_TEXTS = ['فريقنا المتخصص يفرز المواد بدقة', 'موازين معتمدة ومعايرة رسمياً', 'مقر مجهز بأحدث المعدات'];
+var galleryCurrent = 0;
+
+function buildGalleryDots(){
+  var html = '';
+  GALLERY_TEXTS.forEach(function(_, i){
+    html += '<button onclick="setGallery(' + i + ')" aria-label="صورة ' + (i+1) + '"></button>';
+  });
+  document.getElementById('galleryDots').innerHTML = html;
+  updateGalleryUI();
+}
+
+function setGallery(i){
+  galleryCurrent = i;
+  updateGalleryUI();
+}
+
+function updateGalleryUI(){
+  var imgs = document.querySelectorAll('#gallery img');
+  imgs.forEach(function(img, i){ img.classList.toggle('active', i === galleryCurrent); });
+  document.getElementById('galleryCaption').innerHTML = '<div>' + GALLERY_TEXTS[galleryCurrent] + '</div>';
+  var dots = document.querySelectorAll('#galleryDots button');
+  dots.forEach(function(d, i){ d.classList.toggle('active', i === galleryCurrent); });
+}
+
+setInterval(function(){
+  galleryCurrent = (galleryCurrent + 1) % GALLERY_TEXTS.length;
+  updateGalleryUI();
+}, 5000);
+
+/* =========================================================
+   إرسال النماذج إلى واتساب
+   ========================================================= */
+function submitWasteForm(e){
+  e.preventDefault();
+  var name = document.getElementById('wfName').value.trim();
+  var phone = document.getElementById('wfPhone').value.trim();
+  var type = document.getElementById('wfType').value;
+  var city = document.getElementById('wfCity').value.trim();
+  var notes = document.getElementById('wfNotes').value.trim();
+
+  if(!name || !phone){
+    alert('يرجى إدخال الاسم ورقم الهاتف على الأقل');
+    return;
+  }
+
+  var msg = 'طلب خدمة جديدة - إدارة النفايات\n' +
+    'الاسم: ' + name + '\n' +
+    'الهاتف: ' + phone + '\n' +
+    'نوع الخدمة: ' + type + '\n' +
+    'المدينة: ' + (city || 'غير محددة') + '\n' +
+    'ملاحظات: ' + (notes || 'لا يوجد');
+
+  window.open('https://wa.me/' + COMPANY.whatsapp + '?text=' + encodeURIComponent(msg), '_blank');
+
+  document.getElementById('wfSubmitText').textContent = 'تم إرسال الطلب';
+  setTimeout(function(){
+    document.getElementById('wfSubmitText').textContent = 'إرسال عبر واتساب';
+    document.getElementById('wasteForm').reset();
+  }, 2500);
+}
+
+function submitContactForm(e){
+  e.preventDefault();
+  var name = document.getElementById('cfName').value.trim();
+  var phone = document.getElementById('cfPhone').value.trim();
+  var materialId = document.getElementById('cfMaterial').value;
+  var city = document.getElementById('cfCity').value.trim();
+
+  if(!name || !phone){
+    alert('يرجى إدخال الاسم ورقم الهاتف');
+    return;
+  }
+
+  var mat = MATERIALS.find(function(m){ return m.id === materialId; });
+  var msg = 'طلب تواصل جديد - موقع الشركة\n' +
+    'الاسم: ' + name + '\n' +
+    'الهاتف: ' + phone + '\n' +
+    'نوع المادة: ' + (mat ? mat.name : '') + '\n' +
+    'المدينة: ' + (city || 'غير محددة');
+
+  window.open('https://wa.me/' + COMPANY.whatsapp + '?text=' + encodeURIComponent(msg), '_blank');
+
+  document.getElementById('cfSubmitText').textContent = 'تم فتح واتساب — أكمل الإرسال';
+  setTimeout(function(){
+    document.getElementById('cfSubmitText').textContent = 'إرسال عبر واتساب';
+    document.getElementById('contactForm').reset();
+  }, 2500);
+}
+
+/* =========================================================
+   تشغيل أولي
+   ========================================================= */
+buildFooter();
+buildWasteServices();
+buildRecycleSteps();
+buildMaterials();
+buildHowWeWork();
+buildWhyUs();
+buildContactChannels();
+buildModal();
+renderStack();
+buildGalleryDots();
+</script>
+</body>
+</html>
